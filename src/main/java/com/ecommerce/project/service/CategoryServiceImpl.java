@@ -91,7 +91,6 @@ public class CategoryServiceImpl implements CategoryService {
         // Validation
         Category savedCategory = categoryRepository.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Category", "categoryId", categoryId));
-        category.setCategoryID(categoryId);
 
         // Save
         category.setCategoryID(categoryId);
